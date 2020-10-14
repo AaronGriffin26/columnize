@@ -11,6 +11,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -20,13 +21,41 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Challenge 1" />
+      <recent name="E:\Challenge 1\src\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main with args">
+    <configuration name="Main with args" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Challenge 1" />
+      <option name="PROGRAM_PARAMETERS" value="Input1.txt 3w" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Challenge 1" />
@@ -34,33 +63,116 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Challenge 1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.columnize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Challenge 1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" value="columnize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.increaseLengthOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Challenge 1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" value="increaseLengthOf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Challenge 1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main with args" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.MainTest" />
+      <item itemvalue="JUnit.MainTest.columnize" />
+      <item itemvalue="JUnit.MainTest.increaseLengthOf" />
+      <item itemvalue="JUnit.MainTest.main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="JUnit.MainTest.increaseLengthOf" />
+        <item itemvalue="JUnit.MainTest.columnize" />
+        <item itemvalue="JUnit.MainTest.main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="WindowStateProjectService">
-    <state width="1915" height="300" key="GridCell.Tab.0.bottom" timestamp="1602573723466">
+    <state x="419" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602695280157">
       <screen x="0" y="0" width="3840" height="2130" />
     </state>
-    <state width="1915" height="300" key="GridCell.Tab.0.bottom/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602573723466" />
-    <state width="1915" height="300" key="GridCell.Tab.0.center" timestamp="1602573723465">
+    <state x="419" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602695280157" />
+    <state x="1043" y="375" width="840" height="311" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1602692660408">
       <screen x="0" y="0" width="3840" height="2130" />
     </state>
-    <state width="1915" height="300" key="GridCell.Tab.0.center/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602573723465" />
-    <state width="1915" height="300" key="GridCell.Tab.0.left" timestamp="1602573723465">
+    <state x="1043" y="375" width="840" height="311" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602692660408" />
+    <state x="645" y="276" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602687431970">
       <screen x="0" y="0" width="3840" height="2130" />
     </state>
-    <state width="1915" height="300" key="GridCell.Tab.0.left/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602573723465" />
-    <state width="1915" height="300" key="GridCell.Tab.0.right" timestamp="1602573723466">
+    <state x="645" y="276" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602687431970" />
+    <state width="1915" height="299" key="GridCell.Tab.0.bottom" timestamp="1602695368497">
       <screen x="0" y="0" width="3840" height="2130" />
     </state>
-    <state width="1915" height="300" key="GridCell.Tab.0.right/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602573723466" />
-    <state x="438" y="115" width="2305" height="1633" key="SettingsEditor" timestamp="1602523118777">
+    <state width="1915" height="299" key="GridCell.Tab.0.bottom/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602695368497" />
+    <state width="1915" height="299" key="GridCell.Tab.0.center" timestamp="1602695368497">
       <screen x="0" y="0" width="3840" height="2130" />
     </state>
-    <state x="438" y="115" width="2305" height="1633" key="SettingsEditor/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602523118777" />
+    <state width="1915" height="299" key="GridCell.Tab.0.center/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602695368497" />
+    <state width="1915" height="299" key="GridCell.Tab.0.left" timestamp="1602695368497">
+      <screen x="0" y="0" width="3840" height="2130" />
+    </state>
+    <state width="1915" height="299" key="GridCell.Tab.0.left/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602695368497" />
+    <state width="1915" height="299" key="GridCell.Tab.0.right" timestamp="1602695368497">
+      <screen x="0" y="0" width="3840" height="2130" />
+    </state>
+    <state width="1915" height="299" key="GridCell.Tab.0.right/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602695368497" />
+    <state x="780" y="475" key="ReplaceDuplicatesPrompt" timestamp="1602695174802">
+      <screen x="0" y="0" width="3840" height="2130" />
+    </state>
+    <state x="780" y="475" key="ReplaceDuplicatesPrompt/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602695174802" />
+    <state x="114" y="155" width="2305" height="1633" key="SettingsEditor" timestamp="1602695323170">
+      <screen x="0" y="0" width="3840" height="2130" />
+    </state>
+    <state x="114" y="155" width="2305" height="1633" key="SettingsEditor/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602695323170" />
+    <state x="670" y="432" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1602687982172">
+      <screen x="0" y="0" width="3840" height="2130" />
+    </state>
+    <state x="670" y="432" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602687982172" />
+    <state x="736" y="350" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1602689708350">
+      <screen x="0" y="0" width="3840" height="2130" />
+    </state>
+    <state x="736" y="350" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602689708350" />
+    <state x="695" y="291" key="extract.method.dialog" timestamp="1602695168386">
+      <screen x="0" y="0" width="3840" height="2130" />
+    </state>
+    <state x="695" y="291" key="extract.method.dialog/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602695168386" />
+    <state x="629" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1602687418972">
+      <screen x="0" y="0" width="3840" height="2130" />
+    </state>
+    <state x="629" y="240" width="672" height="678" key="search.everywhere.popup/0.0.3840.2130/3840.-1703.2160.3810/1047.2160.800.419@0.0.3840.2130" timestamp="1602687418972" />
   </component>
 </project>
