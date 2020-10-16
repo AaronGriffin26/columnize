@@ -2,7 +2,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.InvalidPathException;
 import java.nio.file.Paths;
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -68,7 +67,7 @@ public class Main {
                 }
             }
         }
-        if(args[1] == null) {
+        if(args[1] == null || args[1].equals("")) {
             Scanner scanner = new Scanner(System.in);
             while(true) {
                 System.out.print("Enter number of columns: ");
@@ -88,28 +87,29 @@ public class Main {
     }
 
     public static String columnize(List<String> input, int columns) {
-        ArrayList<String> output = new ArrayList<>();
-        String[] lines = input.stream().map(String::trim).toArray(String[]::new);
-        int maxOutputLineCount = (int)Math.ceil(lines.length / (float)columns);
-        int columnWidth = IntStream.range(0, lines.length).reduce(0, (max, ptr) -> Math.max(max, lines[ptr].length()));
-        columnWidth = (int)Math.ceil((columnWidth + 1.0) / 4.0) * 4;
-        for(int i = 0; i < maxOutputLineCount; i++) {
-            output.add("");
-        }
-        for(int i = 0; i < lines.length; i++) {
-            int x = i / maxOutputLineCount;
-            int y = (i % maxOutputLineCount);
+        String[] trimmedLines = input.stream().map(String::trim).toArray(String[]::new);
+        int outputLineCount = (int)Math.ceil(trimmedLines.length / (float)columns);
+        int columnWidth = getColumnWidth(trimmedLines);
+        ArrayList<String> output = new ArrayList<>(outputLineCount);
+        IntStream.range(0, outputLineCount).forEach(i -> output.add(""));
+        for(int i = 0; i < trimmedLines.length; i++) {
+            int x = i / outputLineCount;
+            int y = (i % outputLineCount);
             String paddedLine = increaseLengthOf(output.get(y), x * columnWidth);
-            output.set(y, paddedLine + lines[i]);
+            output.set(y, paddedLine + trimmedLines[i]);
         }
         return String.join("\n", output);
     }
 
+    public static int getColumnWidth(String[] trimmedLines) {
+        int columnWidth = IntStream.range(0, trimmedLines.length).reduce(0, (max, ptr) -> Math.max(max, trimmedLines[ptr].length()));
+        columnWidth = (int)Math.ceil((columnWidth + 1.0) / 4.0) * 4;
+        return columnWidth;
+    }
+
     public static String increaseLengthOf(String input, int newLength) {
-        StringBuilder output = new StringBuilder(input);
-        for(int j = input.length(); j < newLength; j++) {
-            output.append(" ");
-        }
-        return output.toString();
+        if(newLength <= input.length())
+            return input;
+        return input + String.format("%" + (newLength - input.length()) + "s", "");
     }
 }
