@@ -5,6 +5,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Main {
@@ -90,8 +91,7 @@ public class Main {
         String[] trimmedLines = input.stream().map(String::trim).toArray(String[]::new);
         int outputLineCount = (int)Math.ceil(trimmedLines.length / (float)columns);
         int columnWidth = getColumnWidth(trimmedLines);
-        ArrayList<String> output = new ArrayList<>(outputLineCount);
-        IntStream.range(0, outputLineCount).forEach(i -> output.add(""));
+        List<String> output = preallocatedStringList(outputLineCount);
         for(int i = 0; i < trimmedLines.length; i++) {
             int x = i / outputLineCount;
             int y = (i % outputLineCount);
@@ -99,6 +99,10 @@ public class Main {
             output.set(y, paddedLine + trimmedLines[i]);
         }
         return String.join("\n", output);
+    }
+
+    public static ArrayList<String> preallocatedStringList(int outputLineCount) {
+        return IntStream.range(0, outputLineCount).mapToObj(i -> "").collect(Collectors.toCollection(ArrayList::new));
     }
 
     public static int getColumnWidth(String[] trimmedLines) {

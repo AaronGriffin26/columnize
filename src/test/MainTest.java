@@ -67,9 +67,20 @@ class MainTest {
         input1.add("2-");
         ArrayList<String> input2 = new ArrayList<>(input1);
         input2.add("Eleven-----");
-        input2.add("Thirty------------------------");
+        input2.add("Twenty--------------");
         assertEquals(8, Main.getColumnWidth(input1.toArray(new String[0])));
-        assertEquals(32, Main.getColumnWidth(input2.toArray(new String[0])));
+        assertEquals(24, Main.getColumnWidth(input2.toArray(new String[0])));
+    }
+
+    @Test
+    void preallocatedStringList() {
+        ArrayList<String> compare1 = new ArrayList<>();
+        ArrayList<String> compare2 = new ArrayList<>();
+        for(int i = 0; i < 6; i++) {
+            compare2.add("");
+        }
+        assertLinesMatch(compare1, Main.preallocatedStringList(0));
+        assertLinesMatch(compare2, Main.preallocatedStringList(6));
     }
 
     @Test
